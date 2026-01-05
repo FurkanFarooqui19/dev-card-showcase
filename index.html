@@ -109,32 +109,6 @@
     </nav>
 
 <!-- NAVBAR END -->
- <!-- 🔢 CONTRIBUTOR STATS -->
-<section class="stats-container">
-    <div class="stat-card">
-        <i class="fas fa-users"></i>
-        <span id="totalCount">0</span>
-        <p>Total Members</p>
-    </div>
-    <div class="stat-card">
-        <i class="fas fa-code"></i>
-        <span id="devCount">0</span>
-        <p>Developers</p>
-    </div>
-    <div class="stat-card">
-        <i class="fas fa-hands-helping"></i>
-        <span id="contributorCount">0</span>
-        <p>Contributors</p>
-    </div>
-    <div class="stat-card">
-        <i class="fas fa-shield-alt"></i>
-        <span id="maintainerCount">0</span>
-        <p>Maintainers</p>
-    </div>
-</section>
-
-<!-- 🔎 FILTER & SORT CONTROLS -->
-<div class="controls">
 
 <!-- 🔍 SEARCH & FILTER SECTION -->
 <section class="search-filter-container">
@@ -169,64 +143,6 @@
 
         <!-- ADMIN CARD - Don't modify this card -->
         <div class="card">
-  <div class="card-img-container">
-    <img src="images/admin.jpg" alt="Admin Photo" class="card-img">
-  </div>
-
-  <div class="card-header">
-    <i class="fas fa-user"></i>
-    <h2>Project Admin</h2>
-  </div>
-
-  <span class="role-badge maintainer">
-    <i class="fas fa-crown"></i>
-    Maintainer
-  </span>
-
-  <div class="card-quote">
-    <i class="fas fa-quote-left"></i>
-    <p>"Welcome to the project! Fork this repo and add your card below."</p>
-    <i class="fas fa-quote-right"></i>
-  </div>
-
-  <a href="https://github.com/Jayanta2004" class="card-btn" target="_blank">
-    <i class="fab fa-github"></i>
-    GitHub Profile
-  </a>
-</div>
-
-
-        <!-- 👇 CONTRIBUTORS: START COPYING FROM HERE 👇 -->
-        <!-- This is the TEMPLATE card - copy this entire block and paste it below -->
-        <!-- 👇 CONTRIBUTORS: START COPYING FROM HERE 👇 -->
-<div class="card">
-  <div class="card-img-container">
-    <img src="images/user.png" alt="User Photo" class="card-img">
-  </div>
-
-  <div class="card-header">
-    <i class="fas fa-user"></i>
-    <h2>Contributor Name</h2>
-  </div>
-
-  <span class="role-badge contributor">
-    <i class="fas fa-code-branch"></i>
-    Contributor
-  </span>
-
-  <div class="card-quote">
-    <i class="fas fa-quote-left"></i>
-    <p>"I learned how to make a Pull Request today!"</p>
-    <i class="fas fa-quote-right"></i>
-  </div>
-
-  <a href="#" class="card-btn" target="_blank">
-    <i class="fab fa-github"></i>
-    View Profile
-  </a>
-</div>
-<!-- 👆 CONTRIBUTORS: END COPYING HERE 👆 -->
-
             <div class="card-inner">
                 <img src="images/admin.jpg" alt="Admin Photo" class="card-img">
                 <h2>Project Admin</h2>
@@ -254,32 +170,12 @@
         <!-- 👆 CONTRIBUTORS: END COPYING HERE 👆 -->
 
         <div class="card">
-  <div class="card-img-container">
-    <img src="images/mohit-yadav.jpg" alt="Mohit Yadav" class="card-img">
-  </div>
-
-  <div class="card-header">
-    <i class="fas fa-user"></i>
-    <h2>Mohit Yadav</h2>
-  </div>
-
-  <span class="role-badge developer">
-    <i class="fas fa-code"></i>
-    Developer
-  </span>
-
-  <div class="card-quote">
-    <i class="fas fa-quote-left"></i>
-    <p>"Hello world! This is my first PR."</p>
-    <i class="fas fa-quote-right"></i>
-  </div>
-
-  <a href="https://github.com/19-mohityadav" class="card-btn" target="_blank">
-    <i class="fab fa-github"></i>
-    GitHub
-  </a>
-</div>
-
+            <img src="images/mohit-yadav.jpg" alt="Mohit Yadav's Photo" class="card-img">
+            <h2>Mohit Yadav</h2>
+            <span class="role">Frontend Wizard</span>
+            <p>"Hello world! This is my first PR."</p>
+            <a href="https://github.com/19-mohityadav" class="card-btn" target="_blank">GitHub</a>
+        </div>
         
         <div class="card">
             <img src="images/Sameer-Baral.jpg" alt="Sameer's Photo" class="card-img">
@@ -290,32 +186,12 @@
         </div>
 
         <div class="card">
-  <div class="card-img-container">
-    <img src="images/Manas-Sharma.jpg" alt="Manas Sharma" class="card-img">
-  </div>
-
-  <div class="card-header">
-    <i class="fas fa-user"></i>
-    <h2>Manas Sharma</h2>
-  </div>
-
-  <span class="role-badge contributor">
-    <i class="fas fa-code-branch"></i>
-    Contributor
-  </span>
-
-  <div class="card-quote">
-    <i class="fas fa-quote-left"></i>
-    <p>"My first open-source contribution through ECWoC!"</p>
-    <i class="fas fa-quote-right"></i>
-  </div>
-
-  <a href="https://github.com/ManasCodez" class="card-btn" target="_blank">
-    <i class="fab fa-github"></i>
-    GitHub
-  </a>
-</div>
-
+            <img src="images/Manas-Sharma.jpg" alt="User Photo" class="card-img">
+            <h2>Manas Sharma</h2>
+            <span class="role">Contributor</span>
+            <p>"My first open-source contribution through ECWoC!"</p>
+            <a href="https://github.com/ManasCodez" class="card-btn" target="_blank">GitHub</a>
+        </div>
 
         <div class="card">
             <img src="images/Shreya Kumari,.jpg" alt="User Photo" class="card-img">
@@ -831,7 +707,7 @@ function updateContributorStats() {
     let maintainer = 0;
 
     cards.forEach(card => {
-        const role = card.querySelector(".role-badge")?.innerText.toLowerCase();
+        const role = card.querySelector(".role")?.innerText.toLowerCase();
 
         if (role.includes("developer")) dev++;
         else if (role.includes("maintainer")) maintainer++;
@@ -893,79 +769,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => card.classList.add('revealed'), i * 60);
     });
 });
-</script>
-
-<script>
-// Search, role filter, sort wiring and visible-stats update
-(() => {
-    const searchInput = document.getElementById('searchInput');
-    const roleFilter = document.getElementById('roleFilter');
-    const resetBtn = document.getElementById('resetFilters');
-    const sortSelect = document.getElementById('sortSelect');
-    const containerEl = document.querySelector('.card-container');
-    const originalCards = Array.from(containerEl.children);
-
-    function updateContributorStats() {
-        const allCards = Array.from(document.querySelectorAll('.card'));
-        const visibleCards = allCards.filter(c => getComputedStyle(c).display !== 'none');
-
-        let total = visibleCards.length;
-        let dev = 0;
-        let contributor = 0;
-        let maintainer = 0;
-
-        visibleCards.forEach(card => {
-            const roleText = (card.querySelector('.role') || card.querySelector('.role-badge'))?.innerText || '';
-            const role = roleText.toLowerCase();
-            if (role.includes('developer')) dev++;
-            else if (role.includes('maintainer')) maintainer++;
-            else contributor++;
-        });
-
-        // Animate to visible counts
-        animateValue(document.getElementById('totalCount'), 0, total, 500);
-        animateValue(document.getElementById('devCount'), 0, dev, 500);
-        animateValue(document.getElementById('contributorCount'), 0, contributor, 500);
-        animateValue(document.getElementById('maintainerCount'), 0, maintainer, 500);
-    }
-
-    function applyFilters() {
-        const q = searchInput.value.trim().toLowerCase();
-        const role = roleFilter.value;
-
-        originalCards.forEach(card => {
-            const name = (card.querySelector('h2')?.innerText || '').toLowerCase();
-            const roleText = (card.querySelector('.role') || card.querySelector('.role-badge'))?.innerText.toLowerCase() || '';
-
-            const nameMatch = !q || name.includes(q);
-            const roleMatch = role === 'all' || roleText.includes(role);
-
-            if (nameMatch && roleMatch) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-
-    // Wire events
-    if (searchInput) searchInput.addEventListener('input', () => { applyFilters(); updateContributorStats(); });
-    if (roleFilter) roleFilter.addEventListener('change', () => { applyFilters(); updateContributorStats(); });
-    if (sortSelect) sortSelect.addEventListener('change', () => { sortCards(); updateContributorStats(); });
-
-    if (resetBtn) resetBtn.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        if (roleFilter) roleFilter.value = 'all';
-        if (sortSelect) sortSelect.value = 'default';
-        // restore original order & visibility
-        containerEl.innerHTML = '';
-        originalCards.forEach(c => { c.style.display = ''; containerEl.appendChild(c); });
-        updateContributorStats();
-    });
-
-    // initial stats
-    document.addEventListener('DOMContentLoaded', updateContributorStats);
-})();
 </script>
 
 </body>
