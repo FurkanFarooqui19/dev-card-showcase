@@ -3774,3 +3774,67 @@ body.light-mode .card-container.list-view .role {
 .card-container.list-view ~ .search-filter-container .view-toggle-btn .fa-th-large {
     display: inline;
 }
+
+/* ============================
+   Soumya's Custom Card Style--
+   ============================
+*/
+.SRDash2003-custom-style {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--bg-card), var(--bg-card)),
+        linear-gradient(135deg, #20e762);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    position: relative;
+}
+
+.SRDash2003-custom-style:hover {
+    animation: SRDGlow 2s infinite;
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(40, 239, 63, 0.4);
+}
+
+@keyframes SRDGlow {
+    0%,
+    100% {
+        box-shadow: var(--shadow-lg), 0 0 30px rgba(40, 239, 63, 0.6);
+    }
+    50% {
+        box-shadow: var(--shadow-lg), 0 0 50px rgba(40, 239, 63, 0.6), 0 0 70px rgba(40, 239, 63, 0.6);
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: var(--shadow-lg), 0 0 30px rgba(40, 239, 63, 0.6);
+    }
+
+    50% {
+        box-shadow: var(--shadow-lg), 0 0 50px rgba(40, 239, 63, 0.6);
+    }
+}
+.scard-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(71, 235, 62, 0.3);
+    /* Small border weight */
+    background: rgba(64, 255, 0, 0.2) border-box;
+    padding: 2px;
+    /* Reduced padding for smaller border effect */
+    margin: 0 auto 25px auto;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0, 255, 4, 0.2);
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover .scard-img {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 35px rgba(66, 248, 56, 0.3);
+    border-width: 3px;
+    /* Slightly thicker on hover */
+}
