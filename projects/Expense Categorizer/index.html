@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Expense Tracker</title>
+  <title>Expense Tracking</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,6 @@
 <main>
   <div class="dashboard">
 
-    <!-- Left: Add Expense Form -->
     <div class="left-panel form-card">
       <h2>Add Expense</h2>
       <input type="text" id="title" placeholder="Expense Title" />
@@ -33,11 +32,9 @@
       <button id="addBtn">Add Expense</button>
     </div>
 
-    <!-- Right: Summary Panel -->
     <div class="right-panel summary-card">
       <h2>Summary</h2>
 
-      <!-- Currency Selector -->
       <div class="currency-selector">
         <label for="currency">Currency:</label>
         <select id="currency">
@@ -50,6 +47,10 @@
       </div>
 
       <div class="total">💰 Total Expense: <span id="currencySymbolRight">$</span><span id="totalAmountRight">0</span></div>
+
+      <div class="category-summary" id="categorySummary">
+        <!-- Cards for category totals -->
+      </div>
 
       <div class="filter">
         <label>Filter by Category:</label>
@@ -65,11 +66,24 @@
 
       <h3>Recent Expenses</h3>
       <div id="expenseList" class="expense-list"></div>
+
+      <h3>Spending Overview</h3>
+      <div class="charts-container">
+        <canvas id="lineChart" width="400" height="200"></canvas>
+        <canvas id="barChart" width="400" height="200"></canvas>
+        <canvas id="pieChart" width="400" height="200"></canvas>
+      </div>
     </div>
 
   </div>
 </main>
 
+<footer>
+    <p>&copy; 2026 Expense Categorizer</p>
+</footer>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
