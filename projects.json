@@ -1453,6 +1453,24 @@
                    }
     },
     {
+  "title": "Catch A Block ",
+  "description": "Catch a Block Falling Game is an engaging web-based game  aiming to achieve the highest score possible while avoiding missed catches.",
+  "tags": [
+    "HTML",
+    "CSS",
+    "Awareness",
+    "Mental Health",
+    "Digital Wellbeing"
+  ],
+  "links": {
+    "live": "./projects/catch-a-block/index.html"
+  },
+  "author": {
+    "name": "Omkar",
+    "github": "https://github.com/omkarhole"
+  }
+},
+    {
         "title":  "URL Shorter",
         "description":  "A web application that shortens long URLs into concise, shareable links using a URL shortening service API.",
         "tags":  [
