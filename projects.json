@@ -289,6 +289,25 @@
             "github": "https://github.com/omkarhole"
         }
     },
+       {
+        "title": "Brick Breaker Game",
+        "description": "A classic brick breaker game where players control a paddle to bounce a ball and break bricks. Features multiple levels, power-ups, and score tracking for an engaging gaming experience.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Quantum Physics",
+            "Probability",
+            "Visualization"
+        ],
+        "links": {
+            "live": "./projects/brick-breaker/index.html"
+        },
+        "author": {
+            "name": "Omkar",
+            "github": "https://github.com/omkarhole"
+        }
+    },
     {
         "title": "File Size Converter",
         "description": "A real-time utility that converts file sizes between Bytes, KB, MB, and GB instantly. Helps users quickly calculate and understand storage sizes with a clean, interactive interface.",
