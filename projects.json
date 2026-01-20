@@ -3957,6 +3957,8 @@
   }
 },
 {
+    "title": "Two-Player Neon Pong",
+    "description": "A classic two-player Pong game with neon retro visuals, keyboard-controlled paddles, ball physics, collision detection, and score tracking built using HTML Canvas.",
     "title": "Brick Breaker Arcade Game",
     "description": "A classic Brick Breaker arcade game featuring paddle and ball physics, multi-level brick layouts, power-ups, and score tracking built using HTML Canvas.",
     "title": "Retro Snake Game",
@@ -3967,6 +3969,11 @@
         "JavaScript",
         "Canvas",
         "Game",
+        "Retro",
+        "Multiplayer"
+    ],
+    "links": {
+        "live": "#"
         "Retro"
     ],
     "links": {
